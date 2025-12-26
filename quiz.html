@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career guidance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <h1>Future Guide</h1>
+        <div class="nav">
+            <p class="nav-items"><a href="../frontend/home.html">Home</a></p>
+            <p class="nav-items"><a href="../frontend/login.html">Login</a></p>
+            <p class="nav-items"><a href="../frontend/quiz.html">Quiz</a></p>
+            <p class="nav-items"><a href="../frontend/result.html">Your Career</a></p>
+            
+        </div>
+    </nav>
+    <section class="quiz" id="quiz">
+        <h1 class="h2">Career Assessment</h1>
+        <div class="question active" data-q="q1">
+           <h2>1.Favorite School Subject? </h2>
+            <button onclick="selectAnswer('q1','tech')">Computer</button>
+            <button onclick="selectAnswer('q1','health')">Biology</button>
+            <button onclick="selectAnswer('q1','teach')">English</button>
+            <button onclick="selectAnswer('q1','manage')">Economics</button>
+            </div>
+        <div class="question" data-q="q2">
+           <h2>2.In Group Role You Usally? </h2>
+            <button onclick="selectAnswer('q2','tech')">Slove code</button>
+            <button onclick="selectAnswer('q2','health')">Take care</button>
+            <button onclick="selectAnswer('q2','teach')">Lead others</button>
+            <button onclick="selectAnswer('q2','manage')">Lead & plan</button>
+            </div>
+        <div class="question" data-q="q3">
+           <h2>3.What Sounds Most Exciting To You?</h2>
+            <button onclick="selectAnswer('q3','tech')">Creating app</button>
+            <button onclick="selectAnswer('q3','health')">Treating patients</button>
+            <button onclick="selectAnswer('q3','teach')">Teach others</button>
+            <button onclick="selectAnswer('q3','manage')">Starting Company</button>
+            </div>
+        <div class="question" data-q="q4">
+           <h2>4. Which School Activity You Like The Most?</h2>
+            <button onclick="selectAnswer('q4','tech')">Science Experiments</button>
+            <button onclick="selectAnswer('q4','health')">Health&Wealth Activities</button>
+            <button onclick="selectAnswer('q4','teach')">Seminars</button>
+            <button onclick="selectAnswer('q4','manage')">Organizing event</button>
+            </div>
+        <div class="question" data-q="q5">
+           <h2>5.How Do You Want To Help Society? </h2>
+            <button onclick="selectAnswer('q5','tech')">Invent New Tech</button>
+            <button onclick="selectAnswer('q5','health')">Save Life</button>
+            <button onclick="selectAnswer('q5','teach')">Teach New Ideas</button></option>
+            <button onclick="selectAnswer('q5','manage')">Create Jobs</button>
+            </div>
+        <button  id="nextBtn"onclick="nextQuestion()">Next</button>
+
+    </section>
+    <script src="script.js"></script>
+    </body>
+    </html>

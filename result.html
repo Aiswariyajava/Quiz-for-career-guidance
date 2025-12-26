@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Career Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navigation">
+    <h1>Future Guide</h1>
+</nav>
+
+<section class="result">
+    <h2 id="studentName"></h2>
+    <h3 id="career"></h3>
+
+    <h4>Career Roadmap</h4>
+    <ul id="roadmap"></ul>
+</section>
+
+<script>
+    // Get data from localStorage
+    const name = localStorage.getItem("studentName");
+    const result = JSON.parse(localStorage.getItem("careerResult"));
+
+    // If data missing, redirect
+    if (!name || !result) {
+        window.location.href = "home.html";
+    }
+
+    // Display name and career
+    document.getElementById("studentName").innerText =
+        "Hello " + name + " 👋";
+
+    document.getElementById("career").innerText =
+        "Recommended Career: " + result.career;
+
+    // Display roadmap
+    const roadmapList = document.getElementById("roadmap");
+
+    result.roadmap.forEach(step => {
+        const li = document.createElement("li");
+        li.innerText = step;
+        roadmapList.appendChild(li);
+    });
+</script>
+
+</body>
+</html>

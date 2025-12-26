@@ -1,0 +1,214 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:"Playfair Display", serif;
+    background: linear-gradient(45deg,rgba(44, 38, 68, 0.667),rgba(60, 12, 51, 0.6));
+}
+html{
+    scroll-behavior:smooth;
+}
+.navigation{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+    background-color: rgb(61, 59, 65);
+    color:antiquewhite;
+}
+.nav{
+    display:flex;
+    align-items: center;
+}
+.nav-items a{
+    color:white;
+    margin-left:30px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.home{
+    text-align: center;
+    padding:30px;
+    
+}
+.text h1{
+    margin-bottom:20px;
+    font-size:60px;
+}
+.text p{
+    color:rgb(60, 60, 60);
+    font-size:20px;
+}
+.job{
+    display:flex;
+    padding:10px;
+    justify-content:space-between;
+    align-items: center;
+}
+.job img{
+    border-color:black;
+    border-width:2px;
+    border-style:solid;
+    padding:20px;
+    border-radius:30px;
+
+    
+}
+.job img:hover{
+    background-color: blueviolet;
+
+}
+.getstarted{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    
+}
+.getstarted button{
+    font-size:30px;
+    padding:20px;
+    border-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-radius:30px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.login-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:100px;
+}
+.login-box input{
+    margin-bottom:20px;
+    padding:20px;
+    font-size:20px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    border-radius:30px;
+}
+.login-box h1{
+    margin-bottom:50px;
+    font-size:60px;
+}
+.login-box button{
+    padding:10px;
+    font-size:15px;
+    background-color:rgb(60, 60, 246);
+    color:white;
+}
+.login-box button:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+.login-box{
+    border-width:2px;
+    border-style:solid;
+    border-color:white;
+    width:fit-content;
+    margin-left:500px;
+    padding:60px;
+    margin-top:20px;
+    border-radius:30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(45deg,rgba(118, 39, 39, 0.6),rgba(47, 50, 157, 0.4),rgb(84, 35, 60));
+    
+}
+.question{
+    display:none;
+}
+.question.active{
+    display:block;
+}
+.quiz .h2 {
+    text-align:center;
+    font-size:50px;
+    padding:20px;
+}
+.question.active{
+text-align:center;
+color: rgb(77, 64, 64);
+font-size:30px;
+padding:20px;
+}
+
+    
+.question.active h2{
+    margin-bottom:30px;
+    font-size:40px;
+}
+.question.active button{
+    padding:20px;
+    font-size:20px;
+    margin-left:10px;
+    border-radius:20px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+}
+.question{
+text-align:center;
+color: rgb(77, 64, 64);
+font-size:30px;
+padding:20px;
+}
+
+    
+.question h2{
+    margin-bottom:30px;
+    font-size:40px;
+}
+.question button{
+    padding:20px;
+    font-size:20px;
+    margin-left:10px;
+    border-radius:20px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+}
+#nextBtn{
+    display:block;
+    margin:30px auto;
+    padding:20px;
+    font-size:20px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    background-color:rgb(74, 31, 31);
+    cursor:pointer;
+    color:white;
+}
+
+
+.result {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result h3 {
+    color: #2e7d32;
+}
+
+.result ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.result li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
